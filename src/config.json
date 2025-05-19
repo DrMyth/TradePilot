@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "TradePilot": {
+      "command": "/absolute/path/to/uv/.local/bin/uv.exe",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/absolute/path/to/TradePilot/src/main.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/absolute/path/to/TradePilot/src"
+      }
+    }
+  }
+}

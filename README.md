@@ -7,6 +7,7 @@ A Model Context Protocol (MCP) server built with Python to enable AI LLMs (such 
 
 - **Natural Language Trading:** Integrate with AI LLMs to place, manage, and analyze trades using plain English.
 - **MetaTrader 5 Integration:** Direct connection to MT5 for real-time trading, order management, and account monitoring.
+- **Gemini-2.0-flash Support:** Leverage Google’s advanced model for richer conversations.
 - **Comprehensive API:** Exposes market data, trading, account, and historical functions for advanced automation and analytics.
 - **Extensible & Modular:** Easily add new strategies or extend existing functionality.
 - **User-Friendly:** Designed for both novice and experienced traders.
@@ -40,13 +41,22 @@ uv venv
 uv pip install -r pyproject.toml
 ```
 
-### 4. Running the Server (Debug/Development)
+### 4. Running the MCP Client with Gemini-2.0-flash
+Interactive CLI Client: Launch a REPL powered by Gemini‑2.0‑flash to execute natural‑language trading commands (e.g. “Place a buy order…” or “Show my open positions”).
+1. Edit `src/config.json` to point at your MCP server endpoint and credentials.
+2. Run the client:
+
+   ```bash
+   uv run src/client.py
+   ```
+
+### 5. Running the Server (Debug/Development)
 
 ```bash
 mcp run src/main.py
 ```
 
-This will start the MCP server, exposing all trading and market data functions.
+This command starts the MCP server and makes all trading and market‑data functions available. You can reach the server at https://localhost:6274.
 
 ## Integration with Cursor IDE or Claude AI
 
