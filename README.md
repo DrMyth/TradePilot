@@ -44,7 +44,12 @@ uv pip install -r pyproject.toml
 ### 4. Running the MCP Client with Gemini-2.0-flash
 Interactive CLI Client: Launch a REPL powered by Gemini‑2.0‑flash to execute natural‑language trading commands (e.g. “Place a buy order…” or “Show my open positions”).
 1. Edit `src/config.json` to point at your MCP server endpoint and credentials.
-2. Run the client:
+2. Obtain a Gemini-2.0-flash API key from [Google AI Studio](https://aistudio.google.com/).
+4. Add your API key to your `.env` file (create one if it doesn't exist) in the project root:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+3. Run the client:
 
    ```bash
    uv run src/client.py
