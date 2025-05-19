@@ -1,0 +1,8 @@
+from utils.mt5_client import mt5
+
+ORDER_LIFETIME_MAP = {
+    "GTC": mt5.ORDER_TIME_GTC,
+    "DAY": mt5.ORDER_TIME_DAY,
+    "SPECIFIED": mt5.ORDER_TIME_SPECIFIED,
+    "SPECIFIED_DAY": mt5.ORDER_TIME_SPECIFIED_DAY
+}
